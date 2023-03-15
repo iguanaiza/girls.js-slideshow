@@ -9,7 +9,6 @@ https://github.com/girlsjs, https://girlsjs.pl/
 
 There are a lot of comments in my .js file because I didn't want to remove my progress :)
 
-Code created in https://codesandbox.io/s/github/iguanaiza/girls.js-slideshow
-The HTML and CSS files were already given, I only edited a little of CSS :)
+Code created in https://codesandbox.io. The HTML and CSS files were already given, I only edited a little of CSS :)
 
 Result: https://iguanaiza.github.io/girls.js-slideshow/

@@ -5,8 +5,7 @@
 
 // ==CLASS CHANGING FUNCTION==
 function showSlide(slideNum) {
-  if (slideNum < 1 || slideNum > 5) {
-    //console.log("Please provide value between 1 and 5.");
+  if (slideNum < 1 || slideNum > 5) {
     return;
   }
 
@@ -20,36 +19,6 @@ function showSlide(slideNum) {
   slide.classList.add("show");
   pin.classList.add("selected");
 }
-/* function showSlide(slideNum) {
-  const clear = document.querySelector(".show");
-  const slide = document.querySelector("#slide" + slideNum);
-
-  if (slideNum < 1 && slideNum <= 5) {
-    clear.classList.remove("show");
-    slide.classList.add("show");
-  } else console.log("Please provide value between 1 and 5.");
-}*/
-
-// ==SLIDE CHANGING FUNCTIONS FOR >PIN< SELECTION==
-/*function handleClick1() {
-  showSlide(1);
-}
-
-function handleClick2() {
-  showSlide(2);
-}
-
-function handleClick3() {
-  showSlide(3);
-}
-
-function handleClick4() {
-  showSlide(4);
-}
-
-function handleClick5() {
-  showSlide(5);
-}*/
 
 // ==SLIDE CHANGING FUNCTION FOR >ARROW< SELECTION==
 let currentNum = 1;
@@ -104,18 +73,7 @@ for (let pinNum = 1; pinNum <= 5; pinNum++) {
     .addEventListener("click", function () {
       showSlide(pinNum);
     });
-}
-/*const pin1 = document.querySelector("#pin1");
-const pin2 = document.querySelector("#pin2");
-const pin3 = document.querySelector("#pin3");
-const pin4 = document.querySelector("#pin4");
-const pin5 = document.querySelector("#pin5");
-
-pin1.addEventListener("click", handleClick1);
-pin2.addEventListener("click", handleClick2);
-pin3.addEventListener("click", handleClick3);
-pin4.addEventListener("click", handleClick4);
-pin5.addEventListener("click", handleClick5);*/
+}
 
 //==CHANGING PHOTO BY >ARROW< SELECTION==
 const prev = document.querySelector("#prev");
@@ -126,3 +84,46 @@ next.addEventListener("click", handleNext);
 
 //==AUTOPLAY PHOTOS==
 autoPlay.addEventListener("click", playBtnOn);
+
+/* ++++OLD CODE++++
+function showSlide(slideNum) {
+  const clear = document.querySelector(".show");
+  const slide = document.querySelector("#slide" + slideNum);
+
+  if (slideNum < 1 && slideNum <= 5) {
+    clear.classList.remove("show");
+    slide.classList.add("show");
+  } else console.log("Please provide value between 1 and 5.");
+}
+
+function handleClick1() {
+  showSlide(1);
+}
+
+function handleClick2() {
+  showSlide(2);
+}
+
+function handleClick3() {
+  showSlide(3);
+}
+
+function handleClick4() {
+  showSlide(4);
+}
+
+function handleClick5() {
+  showSlide(5);
+}
+
+const pin1 = document.querySelector("#pin1");
+const pin2 = document.querySelector("#pin2");
+const pin3 = document.querySelector("#pin3");
+const pin4 = document.querySelector("#pin4");
+const pin5 = document.querySelector("#pin5");
+
+pin1.addEventListener("click", handleClick1);
+pin2.addEventListener("click", handleClick2);
+pin3.addEventListener("click", handleClick3);
+pin4.addEventListener("click", handleClick4);
+pin5.addEventListener("click", handleClick5);*/
